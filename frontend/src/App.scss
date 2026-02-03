@@ -1,0 +1,46 @@
+@use 'assets/variables.module';
+
+#root{
+    //width: variables.$total-width;
+    //background-color: white;
+    //border-radius: 10px;
+    //overflow: hidden;
+    //height: calc(100vh - 100px);
+    //margin: 50px auto;
+    display: grid;
+    grid-template-rows: variables.$header-height max(calc(100vh - variables.$header-height));
+}
+
+body{
+    background-image: linear-gradient(#c7c9ca, #e8e8e8);
+
+    *{
+        scrollbar-color: #0d6efded #e0e0e0aa;
+        //scrollbar-width: thin;
+    
+        &::-webkit-scrollbar {
+          width: 20px;
+        }
+    
+        &::-webkit-scrollbar-track {
+          //background: rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          border: solid 5px transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          box-shadow: inset 0 0 10px 10px #0d6efded;
+          //background: #fff;
+          border-radius: 10px;
+          border: solid 5px transparent;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          box-shadow: inset 0 0 10px 10px #0846a4ed;
+        }
+      }
+}
+
+p, h1, h2, h3, h4, h5, h6, span{
+    color: white;
+    margin-bottom: unset;
+}

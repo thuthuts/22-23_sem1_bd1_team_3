@@ -1,0 +1,7 @@
+jupytext
+pyspark
+pymongo
+nltk
+spacy
+numpy
+sparknlp

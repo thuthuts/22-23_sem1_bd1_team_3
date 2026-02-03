@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+#  app1:
+#    image: teambd3/ml_spark:1.0
+#    env_file: .././.env
+#    command: python -u sentiment_analysis_twitter.py
+#  app2:
+#    image: teambd3/ml_spark:1.0
+#    env_file: .././.env
+#    command: python -u sentiment_analysis_news_headlines.py
+# add other scripts here
+  app3:
+    image: teambd3/ml_spark:1.0
+    env_file: .././.env
+    command: python -u sentiment_analysis_company_news.py
